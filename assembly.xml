@@ -1,0 +1,17 @@
+<assembly>
+    <id>tar-ball</id>
+    <formats>
+        <format>tar</format>
+    </formats>
+    <fileSets>
+        <fileSet>
+            <directory>${project.basedir}</directory>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>${project.basedir}/src/main</directory>
+        </fileSet>
+    </fileSets>
+</assembly>
