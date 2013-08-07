@@ -6,7 +6,11 @@
 
     <groupId>kijiji-coding-contest</groupId>
     <artifactId>kijiji-coding-contest</artifactId>
-    <version>1.0</version>
+    <version>1.2</version>
+    
+    <properties>
+        <scala.version>2.10.1</scala.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -29,19 +33,20 @@
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.1</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
-                <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -68,7 +73,22 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+                <version>3.1.5</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <scalaVersion>${scala.version}</scalaVersion>
+                </configuration>
+              </plugin>
         </plugins>
     </build>
-
 </project>

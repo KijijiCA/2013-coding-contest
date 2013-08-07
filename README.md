@@ -1,10 +1,3 @@
-UPDATE: August 2nd, 2013
-========================
-
-The coding contest is now closed. We received a total of 119 submissions (109 Java, 8 Scala, 1 JRuby, 1 Xtend). Thanks everyone for your participation and enthusiasm.
-You can read our explanation around the SortedMap problem at [http://kijijiblog.ca/coding-contest-closed](http://kijijiblog.ca/coding-contest-closed)
-
-
 So you think you can code, eh?
 ==============================
 
