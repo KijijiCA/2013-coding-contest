@@ -1,3 +1,15 @@
+VERDICT: August 8th, 2013
+=========================
+
+Congratulations to the authors of the top 3 solutions:
+
+1. Shida Li
+2. Keith Kim
+3. Donny Nadolny
+
+You can see their code in separate branches and read a detailed report at  
+[http://kijijiblog.ca/so-you-think-you-can-code-winner](http://kijijiblog.ca/so-you-think-you-can-code-winner)
+
 UPDATE: August 2nd, 2013
 ========================
 
